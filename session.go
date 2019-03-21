@@ -78,7 +78,7 @@ func (s Session) SubredditSubmissions(subreddit string, sort PopularitySort, par
 	return submissions, nil
 }
 
-// SubmissionComments returns the comments on a submission given it's ID.
+// SubmissionsComments returns the comments on a submission given it's ID.
 func (s Session) SubmissionsComments(submissionID string) ([]*Comment, error) {
 	redditURL := "https://www.reddit.com"
 	redditURL += "/comments/" + submissionID
